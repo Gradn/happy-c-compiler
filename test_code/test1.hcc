@@ -1,0 +1,23 @@
+// 函数递归调用与for循环测试
+
+int fib(int n) {
+    
+    if (n == 1) return 1;
+    if (n == 0) return 1;
+    int a1 = fib(n - 2);
+    int a2 = fib(n - 1);
+    int sum = a1 + a2;
+    return sum;
+}
+
+int main() {
+    
+    int a = 10;
+    int ans;
+    int i;
+    for (i = 0; i <= 20; i = i + 1) {
+        ans = fib(i);
+        printf("斐波那契数列的第%d项是%d\n", i, ans);
+    }
+    return 0;
+}

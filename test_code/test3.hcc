@@ -1,0 +1,31 @@
+int main() {
+    int i;
+    printf("------for-continue break测试-------\n");
+    for (i = 0; i < 10; i = i + 1) {
+        if (i == 2) {
+            printf("i 为 2，continue跳过当前轮\n");
+            continue;
+        }
+        if (i == 4) {
+            printf("i 为 4，break跳出循环\n");
+            break;
+        }
+        printf("i的值是%d\n", i);
+    }
+
+    printf("------while-continue break测试-------\n");
+    i = 0;
+    while (i < 10) {
+        if (i == 2) {
+            printf("i 为 2，continue跳过当前轮\n");
+            i = i + 1;
+            continue;
+        }
+        if (i == 4) {
+            printf("i 为 4，break跳出循环\n");
+            break;
+        }
+        printf("i的值是%d\n", i);
+        i = i + 1;
+    }
+}

@@ -1,0 +1,24 @@
+// 数组求最大值
+
+int main() {
+    int arr[3];
+    arr[0] = 9;
+    arr[1] = 28;
+    arr[2] = 19;
+    int p;
+    int temp;
+    int max = 0;
+    for (p = 0; p < 3; p = p + 1) {
+        temp = arr[p];
+        if (temp > max) {
+            max = temp;
+        }
+    }
+    int arrtemp;
+    for (p = 0; p < 3; p = p + 1) {
+        arrtemp = arr[p];
+        printf("数组第%d项的值是%d\n", p, arrtemp);
+    }
+    printf("最大值是%d\n", max);
+    return 0;
+}
